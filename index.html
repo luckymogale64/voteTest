@@ -11,12 +11,37 @@
     <h1 style="color: gray;">Online Vote</h1> 
     <hr>
 
+
     <form action="/action_page.php">
-        <label for="fname">FirstName:</label><br>
+        <label for="fname">Full Names:</label><br>
         <input type="text" id="name" name="name"><br>
         <label for="age">Age:</label><br>
         <input type="text" id="age" name="age"><br><br>
-      </form>
+        <label for="text">Gender:</label><br>
+        <input type="checkbox" id="male" name="male" value="Male">
+        <label for="male"> Male</label><br>
+        <input type="checkbox" id="female" name="female" value="Female">
+        <label for="female">Female</label><br><br>
+        <label for="nationality"> Nationality:
+        <select name="nationality" id='nationality'>
+            <option value="South Afican">South African</option>
+            <option value="Foreigner">Foreigner</option>
+        </select>
+        <br><br>
+
+        Select a Political Party Voting:
+        <br>
+        <input type="radio" name="party" value="ANC">ANC <br><br>
+        <input type="radio" name="party" value="DA">DA <br><br>
+        <input type="radio" name="party" value="EFF">EFF <br><br>
+        <input type="radio" name="party" value="IFP">IFP <br><br>
+        <input type="radio" name="party" value="ACTIONSA">ACTIONSA <br><br>
+        <input type="radio" name="party" value="ICOSA">ICOSA <br><br>
+
+        <button>Vote</button>
+
+    </label><br> 
+    </form>
 
     
     
