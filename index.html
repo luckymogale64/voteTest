@@ -29,19 +29,28 @@
         </select>
 
     </form>
+
+    <br><br>
+
+        
+
         <br><br>
 
-        Select a Political Party Voting:
+
+        Select a political Party Voting:
         <br>
-        <input type="radio" name="party" value="ANC">ANC <br><br>
-        <input type="radio" name="party" value="DA">DA <br><br>
-        <input type="radio" name="party" value="EFF">EFF <br><br>
-        <input type="radio" name="party" value="IFP">IFP <br><br>
-        <input type="radio" name="party" value="ACTIONSA">ACTIONSA <br><br>
-        <input type="radio" name="party" value="ICOSA">ICOSA <br><br>
+        <select name="party" id="party">
+            <option>ANC</option>
+            <option>DA</option>
+            <option>EFF</option>
+            <option>IFP</option>
+            <option>ACTIONSA</option>
+            <option>ICOSA</option>
+        </select>
+
+        <br><br>
 
         <button onclick ="Vote()">Vote</button>
-
     
     <br>
 
@@ -54,6 +63,8 @@
         <p>IFC: <span id="ifcTotal">O</span></p>
         <p>ACTIONSA: <span id="actionsaTotal">O</span></p>
         <p>ICOSA: <span id="icosaTotal">O</span></p>
+
+
 
     </label>
  
