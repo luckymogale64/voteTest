@@ -12,9 +12,8 @@ function Vote() {
   const age = document.getElementById("age").value;
   const nationality = document.getElementById("nationality").value;
   const party = document.getElementById("party").value;
-
-
-  console.log(nationality)
+  
+  
 
   ancDisplay = document.getElementById("ancTotal");
   daDisplay = document.getElementById("daTotal");
@@ -23,12 +22,9 @@ function Vote() {
   actionsaDisplay = document.getElementById("actionsaTotal");
   icosaDisplay = document.getElementById("icosaTotal");
 
-  
 
 
-  alert(party);
-
-  if (name == " ") {
+  if (name == "") {
     alert("Please provide your name");
     return;
   }
@@ -42,6 +38,7 @@ function Vote() {
     alert("only south africa can vote");
     return;
   }
+
 
   if (party == "party") {
     alert("which party won");
@@ -84,6 +81,7 @@ function Vote() {
     icosaDisplay.innerHTML = icosa;
     return;
   }
+
 
 
 
