@@ -1,13 +1,13 @@
+//policital party variable
+let anc = 0;
+let da = 0;
+let eff = 0;
+let ifp = 0;
+let actionsa = 0;
+let icosa = 0;
+
 function Vote() {
 
- //policital party variable
- let anc = 0;
- let da = 0;
- let eff = 0;
- let ifp = 0;
- let actionsa = 0;
- let icosa = 0;
- 
   const name = document.getElementById("name").value;
   const age = document.getElementById("age").value;
   const nationality = document.getElementById("nationality").value;
@@ -16,12 +16,13 @@ function Vote() {
 
   console.log(nationality)
 
-  const ancDisplay = document.getElementById("ancTotal");
-  const daDisplay = document.getElementById("daTotal");
-  const effDisplay = document.getElementById("effTotal");
-  const ifpDisplay = document.getElementById("ifpTotal");
-  const actionsaDisplay = document.getElementById("actionsaTotal");
-  const icosaDisplay = document.getElementById("icosaTotal");
+  ancDisplay = document.getElementById("ancTotal");
+  daDisplay = document.getElementById("daTotal");
+  effDisplay = document.getElementById("effTotal");
+  ifpDisplay = document.getElementById("ifpTotal");
+  actionsaDisplay = document.getElementById("actionsaTotal");
+  icosaDisplay = document.getElementById("icosaTotal");
+
   
 
 
@@ -29,6 +30,7 @@ function Vote() {
 
   if (name == " ") {
     alert("Please provide your name");
+    return;
   }
 
   if (age < 17) {
@@ -36,15 +38,16 @@ function Vote() {
     return;
   }
 
-  if (nationality = "Foreiger") {
+  if (nationality == "Foreigner") {
     alert("only south africa can vote");
     return;
   }
 
-  if (party = "ANC") {
-    alert("Only south african can vote");
+  if (party == "party") {
+    alert("which party won");
     return;
   }
+
 
   if (party == "ANC") {
     anc++;
@@ -58,7 +61,7 @@ function Vote() {
     return;
   }
 
-  if (party == "EEF") {
+  if (party == "EFF") {
     eff++;
     effDisplay.innerHTML = eff;
     return;
@@ -81,15 +84,7 @@ function Vote() {
     icosaDisplay.innerHTML = icosa;
     return;
   }
-}
 
- display.innerHTML = '';
-
- for (let i =0; i < party.length; i++) {
-   if ((party[i].number == number)) {
-     display.innerHTML += "party" + party[i].number + "party";
-   }
- } 
 
 
  document.getElementById('anc').innerHTML = anc;
@@ -98,3 +93,19 @@ function Vote() {
  document.getElementById('ifp').innerHTML = ifp;
  document.getElementById('actionsa').innerHTML = actionsa;
  document.getElementById('icosa').innerHTML = icosa;
+
+ for (let i = 0; i < party.length; i++) {
+   if ((party[i].number == number)) {
+     display.innerHTML += "party" + party[i].number + "party";
+   }
+ } 
+
+}
+
+ 
+
+
+
+
+
+
